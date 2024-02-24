@@ -1,6 +1,8 @@
-import requests
+import asyncio
+from async_req import http_get, http_get_sync
 
-def get_activity_for_age(age: int) -> str:
+
+async def get_activity_for_age(age: int) -> str:
     # Simple logic to categorize age groups; adjust as needed
     if age < 18:
         type = "recreational"
@@ -8,6 +10,16 @@ def get_activity_for_age(age: int) -> str:
         type = "diy"
     else:
         type = "relaxation"
-    response = requests.get(f"http://www.boredapi.com/api/activity?type={type}")
-    activity = response.json().get('activity', "Just relax!")
-    return activity
+    response = await http_get(f"http://www.boredapi.com/api/activity?type={type}")
+    activity = response["activity"]
+    return str(activity)
+
+
+# MAIN
+async def main() -> None:
+    age = 31
+    activity = await get_activity_for_age(age)
+    print(f"Activity for age {age}: {activity}")
+    
+if __name__ == "__main__":
+    asyncio.run(main())
