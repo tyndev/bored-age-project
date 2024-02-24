@@ -20,7 +20,11 @@ Demonstrates asynchronous concurrent programming, type annotations, and API usag
 - [tyndev / notes / Typing in Python](https://github.com/tyndev/tyndev/blob/main/notes/Typing%20in%20Python.md)
 
 ## Output
-Below is an example output from running `main.py` in the terminal, demonstrating both the asynchronous and synchronous execution times along with the age predictions and suggested activities:
+Below is an example output from running `main.py` in the terminal, demonstrating both the asynchronous and synchronous execution times along with the age predictions and suggested activities.
+
+Key takeaway is that the asynchronous execution time is significantly shorter than the synchronous execution time:
+- Total time (async): 1.9195028000012826 seconds
+- Total time (sync): 5.013090200000079 seconds
 
 ```plaintext
 For Bob, predicted age: 70, suggested activity: Go on a long drive with no music
