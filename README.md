@@ -1,7 +1,7 @@
-# Learning Project: Age Predictor and Activity Suggester
+# Learning Project: Concurrent API Calls
 
-## Overview
-A Python application integrating `agify.io` and `Bored API` to predict ages and suggest activities. Demonstrates asynchronous concurrent programming, type annotations, and API usage.
+## Overview: Age Predictor and Activity Suggester
+Demonstrates asynchronous concurrent programming, type annotations, and API usage. This Python application uses `agify.io` and `Bored API` to predict ages and suggest activities. 
 
 ## Key Features
 - **Concurrent API Calls:** Uses `async/await` and `asyncio.gather` for efficient concurrent execution.
@@ -16,10 +16,10 @@ A Python application integrating `agify.io` and `Bored API` to predict ages and 
 - `main.py`: Orchestrates the application logic.
 
 ## My Related Notes
-[tyndev/notes/How to Get Concurrency with Synchronous Requests in Python.md at main · tyndev/tyndev (github.com)](https://github.com/tyndev/tyndev/blob/main/notes/How%20to%20Get%20Concurrency%20with%20Synchronous%20Requests%20in%20Python.md)
+- [tyndev / notes / How to Get Concurrency with Synchronous Requests in Python](https://github.com/tyndev/tyndev/blob/main/notes/How%20to%20Get%20Concurrency%20with%20Synchronous%20Requests%20in%20Python.md)
+- [tyndev / notes / Typing in Python](https://github.com/tyndev/tyndev/blob/main/notes/Typing%20in%20Python.md)
 
-
-## Example Output
+## Output
 Below is an example output from running `main.py` in the terminal, demonstrating both the asynchronous and synchronous execution times along with the age predictions and suggested activities:
 
 ```plaintext
